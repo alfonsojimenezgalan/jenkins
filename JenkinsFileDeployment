@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script{
                     checkout scm
-                    def constants = load 'jenkins/constants.groovy'
+                    def constants = load 'constants.groovy'
                     echo "${constants.gitId}"
                 }
                 
