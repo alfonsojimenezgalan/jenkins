@@ -4,10 +4,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('First Stage') {
             steps {
                 script{
-                    checkout scm
                     def constants = load 'constants.groovy'
                     echo "${constants.gitId}"
                 }
